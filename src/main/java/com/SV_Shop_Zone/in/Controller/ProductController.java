@@ -11,11 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = {
-        "https://sharan-0-dot.github.io",
-        "https://sharan-0-dot.github.io/E-Commerse-WebPage/",
-        "http://127.0.0.1:5500"
-})
+@CrossOrigin(origins = "*")
 @RequestMapping("/Product")
 public class ProductController {
     @Autowired
